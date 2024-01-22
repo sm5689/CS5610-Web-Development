@@ -1,0 +1,78 @@
+<html>
+    <label for="SpeedGrader">
+        <select name="SpeedGrader" id="SpeedGrader">
+            <option value="SpeedGrader">SpeedGrader</option>
+        </select>
+    </label>
+    <hr>
+    <h3>Assignment Name</h3>
+    <input type="text" value="A1 - ENV + HTML">
+    <br>
+    <br>
+    <textarea name="assignment description" id="assignment description" cols="" rows="">This is the assignment description.</textarea>
+    <br>
+    <br>
+    <label for="points">Points</label>
+    <br>
+    <input type="text" value="100">
+    <br>
+    <br>
+    <label for="assignmentgroup">Assignment Group</label>
+    <br>
+    <select name="assignmentgroup" id="assignmentgroup">
+        <option value="assignmentgroup">ASSIGNMENTS</option>
+    </select>
+    <br>
+    <br>
+    <label for="SubmissionType">Submission Type</label>
+    <br>
+    <select name="SubmissionType" id="SubmissionType">
+        <option value="SubmissionType">Online</option>
+    </select>
+    <br>
+    <br>
+    <label for="checkboxes">Online Entry Options</label>
+    <br>
+    <input type="checkbox" value="text-entry" name="text-entry" id="checkboxes-textentry">
+    <label for="checkboxes-textentry">Text Entry</label>
+    <br>
+    <input type="checkbox" value="website-url" name="website-url" id="website-url">
+    <label for="website-url">Website URL</label>
+    <br>
+    <input type="checkbox" value="media-recordings" name="media-recordings" id="media-recordings">
+    <label for="media-recordings">Media Recordings</label>
+    <br>
+    <input type="checkbox" value="Student-Annotation" name="Student-Annotation" id="Student-Annotation">
+    <label for="Student-Annotation">Student Annotation</label>
+    <br>
+    <input type="checkbox" value="file-uploads" name="file-uploads" id="file-uploads">
+    <label for="file-uploads">File Uploads</label>
+    <br>
+    <br>
+    <form action="assign">
+        Assign
+        <br>
+        <label for="Assignto">Assign to</label>
+        <br>
+        <input type="text" value="Everyone">
+        <br>
+        <br>
+        <label for="due">Due</label>
+        <br>
+        <input type="date" value="2021-01-01">
+        <br>
+        <br>
+        <label for="available-from">Available from</label>
+        <br>
+        <input type="date" value="2021-01-01">
+        <br>
+        <br>
+        <label for="until">Until</label>
+        <br>
+        <input type="date" value="2021-01-01">
+        <br>
+        <br>
+        <button id="cancel">Cancel</button>
+        <button id="save">Save</button>
+    </form>
+</html>
