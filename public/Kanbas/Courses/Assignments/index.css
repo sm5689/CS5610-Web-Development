@@ -1,0 +1,50 @@
+.wd-modules,
+.wd-modules * {
+  border-radius: 0%;
+  border: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.wd-modules {
+  margin: 5px;
+}
+
+.wd-modules > li {
+  background-color: lightgray;
+  border: 1px none gray !important;
+  border-left: none !important;
+}
+
+.wd-modules > li > div {
+  padding: 6px;
+  border-left: 1px solid gray !important;
+}
+
+.wd-modules > li > ul > li {
+  padding: 5px;
+  border-top: 1px solid gray !important;
+  border-left: 2px solid green;
+}
+
+.wd-modules > li {
+  margin-bottom: 20px;
+}
+
+
+.column {
+  width: 50%; /* Adjust the percentage to reduce the width as desired */
+  float: left; /* Optional: to align columns next to each other */
+  box-sizing: border-box; /* To include padding and border in the element's total width */
+}
+/* If you're using a grid system, you might want to remove the default padding */
+.no-padding {
+  padding: 0;
+}
+
+.flex-container {
+  display: flex;
+}
+.flex-column {
+  flex: 0 0 50%; /* flex-grow | flex-shrink | flex-basis */
+}

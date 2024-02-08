@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/Kanbas/styles.css" />
+    <link rel="stylesheet" href="../../Courses/Navigation/index.css" />
+    <link rel="stylesheet" href="../../Navigation/index.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="../../../libs/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+
+<body>
+    <div class="d-flex wd-flex-container">
+        <div class="d-none d-md-block">
+            <ul class="wd-kanbas-navigation">
+                <!-- Copy Kanbas Navigation Here -->
+                <li class="N-logo"><a href="http://northeastern.edu">N</a></li>
+                <li class="wd-active">
+                    <a href="/Kanbas/Account/Navigation/index.html"><i class="fa-solid fa-circle-user"></i> Account</a>
+                </li>
+                <li>
+                    <a href="/Kanbas/Courses/Home/screen.html"><i class="fa fa-tachometer"></i> Dashboard</a>
+                </li>
+                <li>
+                    <a href="/Kanbas/Courses/Home/screen.html"><i class="fa-solid fa-book"></i> Courses</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-calendar-days"></i> Calendar</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-inbox"></i> <br />Inbox</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-regular fa-clock"></i> History</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-tv"></i> Studio</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-brands fa-creative-commons-sa"></i> Commons</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-regular fa-circle-question"></i><br />
+                        Help</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-regular fa-message"></i> Messages</a>
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="d-none d-md-block">
+            <ul class="wd-navigation">
+                <li>
+                    <a href="/Kanbas/Courses/Home/screen.html"> Home</a>
+                </li>
+                <li class="wd-active"><a href="#"> Modules</a></li>
+                <li><a href="#"> Piazza</a></li>
+                <li>
+                    <a href="#"> Zoom Meetings</a>
+                </li>
+                <li>
+                    <a href="/Kanbas/Courses/Assignments/screen.html"> Assignments</a>
+                </li>
+                <li>
+                    <a href="#"> Quizzes</a>
+                </li>
+                <li><a href="/Kanbas/Courses/Grades/screen.html"> Grades</a></li>
+                <li><a href="#"> People</a></li>
+                <li>
+                    <a href="#"> Panopto Video</a>
+                </li>
+                <li>
+                    <a href="#"> Discussions</a>
+                </li>
+                <li>
+                    <a href="#"> Announcements</a>
+                </li>
+                <li><a href="#"> Pages</a></li>
+                <li><a href="#"> Files</a></li>
+                <li><a href="#"> Rubrics</a></li>
+                <li>
+                    <a href="#"> Outcomes</a>
+                </li>
+                <li>
+                    <a href="#"> Collaborations</a>
+                </li>
+                <li>
+                    <a href="#"> Syllabus</a>
+                </li>
+                <li>
+                    <a href="/Kanbas/Courses/Settings/Course Details/index.html">
+                        Settings</a>
+                </li>
+            </ul>
+        </div>
+        <div class="flex-fill">
+            <div class="row">
+
+                <div class="col">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li style="padding-top: 30px; padding-bottom: 20px" class="breadcrumb-item active"
+                                aria-current="page">
+                                <i style="
+                            padding-right: 20px;
+                            color: red;
+                            font-size: large;
+                          " class="fa-solid fa-bars"></i>
+                                <span
+                                    style="color: red; font-size: large; padding-right: 2px">CS5610.11744.202310</span>
+                                <i style="font-size: small" class="fa-solid fa-angle-right"></i>
+                                <span style="font-size: large">Assignments</span>
+                            </li>
+                        </ol>
+                    </nav>
+
+                    <button style="float: inline-end;" type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-glasses"></i></button>
+                </div>
+                <!-- <div style="margin-bottom: 0;" class="d-flex justify-content-start" class="input-group mb-3 w-25">
+            <input type="text" class="form-control" placeholder="Search for Assignment" id="SearchForAssignments">
+        </div> -->
+
+                <div class="flex" style="padding-bottom: 20px; padding-top: 20px">
+                    <div class="row">
+                        <div class="col">
+                            <div class="d-flex justify-content-start" class="input-group mb-3 w-25">
+                                <input type="text" class="form-control" placeholder="Search for Assignment"
+                                    id="SearchForAssignments" />
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div style="padding-top: 0px">
+                                <div>
+                                    <button style="float: inline-end; background-color: lightgray" type="button"
+                                        class="btn btn-secondary">
+                                        <i style="color: gray" class="fa fa-ellipsis-v"></i>
+                                    </button>
+                                </div>
+                                <div>
+                                    <button style="
+                      float: inline-end;
+                      border: solid;
+                      color: white;
+                      background-color: rgb(217, 21, 21);
+                    " type="button" class="btn custom-btn-outline me-2">
+                                        <i class="fa fa-plus ms-2" style="color: white"></i>
+                                        Assignment
+                                    </button>
+                                </div>
+                                <div>
+                                    <button style="
+                      float: inline-end;
+                      border: solid 0.5px;
+                      background-color: lightgray;
+                    " type="button" class="btn custom-btn-outline me-2">
+                                        <i class="fa fa-plus ms-2" style="color: gray"></i>Group
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr style="padding-top: 20px; padding-bottom: 20px" />
+                <ul class="list-group wd-modules">
+                    <li style="padding: 1rem 0rem 0rem" class="list-group-item">
+                        <div>
+                            <i class="fa fa-ellipsis-v"></i><i class="fa fa-ellipsis-v"></i>
+                            <i style="padding-left: 5px; padding-right: 3px" class="fa-solid fa-caret-down"></i>
+                            Assignments
+                            <span class="float-end">
+                                <span class="badge rounded-pill"
+                                    style="color: black; border: solid 1px; border-color: gray">40% of Total</span>
+                                <i class="fa fa-plus ms-2" style="color: gray"></i>
+                                <i class="fa fa-ellipsis-v ms-2" style="color: gray"></i>
+                            </span>
+                        </div>
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <span style="padding-left: 48px"> <b>A1 SETUP </b></span><br />
+                                <i class="fa fa-ellipsis-v"></i><i style="padding-right: 15px"
+                                    class="fa fa-ellipsis-v"></i><i style="color: green; padding-right: 5px"
+                                    class="fa-regular fa-pen-to-square"></i>
+                                <span style="padding-bottom: 0px; font-size: small">Week 0 - SETUP - Week starting on
+                                    Monday September 5th
+                                    (9/5/2022) Module |</span>
+                                <span class="float-end">
+                                    <i class="fa fa-check-circle text-success"></i>
+                                    <i class="fa fa-ellipsis-v ms-2"></i>
+                                </span>
+                                <br />
+                                <span style="padding-left: 48px; font-size: small"><b>Due </b></span><span
+                                    style="font-size: small">Sep 18 2024 at 11:59pm | 100 pts</span>
+                            </li>
+                            <li class="list-group-item">
+                                <span style="padding-left: 48px"> <b>A2 HTML </b></span><br />
+                                <i class="fa fa-ellipsis-v"></i><i style="padding-right: 15px"
+                                    class="fa fa-ellipsis-v"></i><i style="color: green; padding-right: 5px"
+                                    class="fa-regular fa-pen-to-square"></i>
+                                <span style="padding-bottom: 0px; font-size: small">Week 1 - SETUP - Week starting on
+                                    Monday September 5th
+                                    (9/5/2022) Module |</span>
+                                <span class="float-end">
+                                    <i class="fa fa-check-circle text-success"></i>
+                                    <i class="fa fa-ellipsis-v ms-2"></i>
+                                </span>
+                                <br />
+                                <span style="padding-left: 48px; font-size: small"><b>Due </b></span><span
+                                    style="font-size: small">Sep 18 2024 at 11:59pm | 100 pts</span>
+                            </li>
+                            <li class="list-group-item">
+                                <span style="padding-left: 48px"> <b>A3 CSS </b></span><br />
+                                <i class="fa fa-ellipsis-v"></i><i style="padding-right: 15px"
+                                    class="fa fa-ellipsis-v"></i><i style="color: green; padding-right: 5px"
+                                    class="fa-regular fa-pen-to-square"></i>
+                                <span style="padding-bottom: 0px; font-size: small">Week 2 - SETUP - Week starting on
+                                    Monday September 5th
+                                    (9/5/2022) Module |</span>
+                                <span class="float-end">
+                                    <i class="fa fa-check-circle text-success"></i>
+                                    <i class="fa fa-ellipsis-v ms-2"></i>
+                                </span>
+                                <br />
+                                <span style="padding-left: 48px; font-size: small"><b>Due </b></span><span
+                                    style="font-size: small">Sep 18 2024 at 11:59pm | 100 pts</span>
+                            </li>
+                            <li class="list-group-item">
+                                <span style="padding-left: 48px"> <b>A4 BOOTSTRAP </b></span><br />
+                                <i class="fa fa-ellipsis-v"></i><i style="padding-right: 15px"
+                                    class="fa fa-ellipsis-v"></i><i style="color: green; padding-right: 5px"
+                                    class="fa-regular fa-pen-to-square"></i>
+                                <span style="padding-bottom: 0px; font-size: small">Week 3 - SETUP - Week starting on
+                                    Monday September 5th
+                                    (9/5/2022) Module |</span>
+                                <span class="float-end">
+                                    <i class="fa fa-check-circle text-success"></i>
+                                    <i class="fa fa-ellipsis-v ms-2"></i>
+                                </span>
+                                <br />
+                                <span style="padding-left: 48px; font-size: small"><b>Due </b></span><span
+                                    style="font-size: small">Sep 18 2024 at 11:59pm | 100 pts</span>
+                            </li>
+                            <li class="list-group-item">
+                                <span style="padding-left: 48px"> <b>A5 JAVASCRIPT </b></span><br />
+                                <i class="fa fa-ellipsis-v"></i><i style="padding-right: 15px"
+                                    class="fa fa-ellipsis-v"></i><i style="color: green; padding-right: 5px"
+                                    class="fa-regular fa-pen-to-square"></i>
+                                <span style="padding-bottom: 0px; font-size: small">Week 4 - SETUP - Week starting on
+                                    Monday September 5th
+                                    (9/5/2022) Module |</span>
+                                <span class="float-end">
+                                    <i class="fa fa-check-circle text-success"></i>
+                                    <i class="fa fa-ellipsis-v ms-2"></i>
+                                </span>
+                                <br />
+                                <span style="padding-left: 48px; font-size: small"><b>Due </b></span><span
+                                    style="font-size: small">Sep 18 2024 at 11:59pm | 100 pts</span>
+                                <!-- <span class="float-end">
+                      <i class="fa fa-check-circle text-success"></i>
+                      <i class="fa fa-ellipsis-v ms-2"></i>
+                    </span> -->
+                            </li>
+                            <li class="list-group-item">
+                                <span style="padding-left: 48px"> <b>A6 REACT </b></span><br />
+                                <i class="fa fa-ellipsis-v"></i><i style="padding-right: 15px"
+                                    class="fa fa-ellipsis-v"></i><i style="color: green; padding-right: 5px"
+                                    class="fa-regular fa-pen-to-square"></i>
+                                <span style="padding-bottom: 0px; font-size: small">Week 5 - SETUP - Week starting on
+                                    Monday September 5th
+                                    (9/5/2022) Module |</span>
+                                <span class="float-end">
+                                    <i class="fa fa-check-circle text-success"></i>
+                                    <i class="fa fa-ellipsis-v ms-2"></i>
+                                </span>
+                                <br />
+                                <span style="padding-left: 48px; font-size: small"><b>Due </b></span><span
+                                    style="font-size: small">Sep 18 2024 at 11:59pm | 100 pts</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li style="padding: 1rem 0rem 0rem" class="list-group-item">
+                        <div>
+                            <i class="fa fa-ellipsis-v"></i><i class="fa fa-ellipsis-v"></i>
+                            <i style="padding-left: 5px; padding-right: 3px" class="fa-solid fa-caret-down"></i>
+                            QUIZZES
+                            <span class="float-end">
+                                <span class="badge rounded-pill"
+                                    style="color: black; border: solid 1px; border-color: gray">10% of Total</span>
+                                <i class="fa fa-plus ms-2" style="color: gray"></i>
+                                <i class="fa fa-ellipsis-v ms-2" style="color: gray"></i>
+                            </span>
+                        </div>
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <span style="padding-left: 48px"> <b>Q1 - HTML </b></span><br />
+                                <i class="fa fa-ellipsis-v"></i><i style="padding-right: 15px"
+                                    class="fa fa-ellipsis-v"></i><i style="color: green; padding-right: 5px"
+                                    class="fa-regular fa-pen-to-square"></i>
+                                <span style="padding-bottom: 0px; font-size: small">Week 0 - SETUP - Week starting on
+                                    Monday September 5th
+                                    (9/5/2022) Module |</span>
+                                <span class="float-end">
+                                    <i class="fa fa-check-circle text-success"></i>
+                                    <i class="fa fa-ellipsis-v ms-2"></i>
+                                </span>
+                                <br />
+                                <span style="padding-left: 48px; font-size: small"><b>Due </b></span><span
+                                    style="font-size: small">Sep 18 2024 at 11:59pm | 100 pts</span>
+                            </li>
+                            <li class="list-group-item">
+                                <span style="padding-left: 48px"> <b>Q2 - CSS </b></span><br />
+                                <i class="fa fa-ellipsis-v"></i><i style="padding-right: 15px"
+                                    class="fa fa-ellipsis-v"></i><i style="color: green; padding-right: 5px"
+                                    class="fa-regular fa-pen-to-square"></i>
+                                <span style="padding-bottom: 0px; font-size: small">Week 1 - SETUP - Week starting on
+                                    Monday September 5th
+                                    (9/5/2022) Module |</span>
+                                <span class="float-end">
+                                    <i class="fa fa-check-circle text-success"></i>
+                                    <i class="fa fa-ellipsis-v ms-2"></i>
+                                </span>
+                                <br />
+                                <span style="padding-left: 48px; font-size: small"><b>Due </b></span><span
+                                    style="font-size: small">Sep 18 2024 at 11:59pm | 100 pts</span>
+                            </li>
+                            <li class="list-group-item">
+                                <span style="padding-left: 48px"> <b>Q3 - JS, ES6 </b></span><br />
+                                <i class="fa fa-ellipsis-v"></i><i style="padding-right: 15px"
+                                    class="fa fa-ellipsis-v"></i><i style="color: green; padding-right: 5px"
+                                    class="fa-regular fa-pen-to-square"></i>
+                                <span style="padding-bottom: 0px; font-size: small">Week 2 - SETUP - Week starting on
+                                    Monday September 5th
+                                    (9/5/2022) Module |</span>
+                                <span class="float-end">
+                                    <i class="fa fa-check-circle text-success"></i>
+                                    <i class="fa fa-ellipsis-v ms-2"></i>
+                                </span>
+                                <br />
+                                <span style="padding-left: 48px; font-size: small"><b>Due </b></span><span
+                                    style="font-size: small">Sep 18 2024 at 11:59pm | 100 pts</span>
+                            </li>
+                            <li class="list-group-item">
+                                <span style="padding-left: 48px"> <b>Q4 - NODE </b></span><br />
+                                <i class="fa fa-ellipsis-v"></i><i style="padding-right: 15px"
+                                    class="fa fa-ellipsis-v"></i><i style="color: green; padding-right: 5px"
+                                    class="fa-regular fa-pen-to-square"></i>
+                                <span style="padding-bottom: 0px; font-size: small">Week 3 - SETUP - Week starting on
+                                    Monday September 5th
+                                    (9/5/2022) Module |</span>
+                                <span class="float-end">
+                                    <i class="fa fa-check-circle text-success"></i>
+                                    <i class="fa fa-ellipsis-v ms-2"></i>
+                                </span>
+                                <br />
+                                <span style="padding-left: 48px; font-size: small"><b>Due </b></span><span
+                                    style="font-size: small">Sep 18 2024 at 11:59pm | 100 pts</span>
+                            </li>
+                            <li class="list-group-item">
+                                <span style="padding-left: 48px"> <b>Q5 - MONGO </b></span><br />
+                                <i class="fa fa-ellipsis-v"></i><i style="padding-right: 15px"
+                                    class="fa fa-ellipsis-v"></i><i style="color: green; padding-right: 5px"
+                                    class="fa-regular fa-pen-to-square"></i>
+                                <span style="padding-bottom: 0px; font-size: small">Week 4 - SETUP - Week starting on
+                                    Monday September 5th
+                                    (9/5/2022) Module |</span>
+                                <span class="float-end">
+                                    <i class="fa fa-check-circle text-success"></i>
+                                    <i class="fa fa-ellipsis-v ms-2"></i>
+                                </span>
+                                <br />
+                                <span style="padding-left: 48px; font-size: small"><b>Due </b></span><span
+                                    style="font-size: small">Sep 18 2024 at 11:59pm | 100 pts</span>
+                                <!-- <span class="float-end">
+                        <i class="fa fa-check-circle text-success"></i>
+                        <i class="fa fa-ellipsis-v ms-2"></i>
+                      </span> -->
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li style="padding: 1rem 0rem 0rem" class="list-group-item">
+                        <div>
+                            <i class="fa fa-ellipsis-v"></i><i class="fa fa-ellipsis-v"></i>
+                            <i style="padding-left: 5px; padding-right: 3px" class="fa-solid fa-caret-down"></i>
+                            EXAMS
+                            <span class="float-end">
+                                <span class="badge rounded-pill"
+                                    style="color: black; border: solid 1px; border-color: gray">20% of Total</span>
+                                <i class="fa fa-plus ms-2" style="color: gray"></i>
+                                <i class="fa fa-ellipsis-v ms-2" style="color: gray"></i>
+                            </span>
+                        </div>
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <span style="padding-left: 48px"> <b>Midterm </b></span><br />
+                                <i class="fa fa-ellipsis-v"></i><i style="padding-right: 15px"
+                                    class="fa fa-ellipsis-v"></i><i style="color: green; padding-right: 5px"
+                                    class="fa-regular fa-pen-to-square"></i>
+                                <span style="padding-bottom: 0px; font-size: small">Week 0 - SETUP - Week starting on
+                                    Monday September 5th
+                                    (9/5/2022) Module |</span>
+                                <span class="float-end">
+                                    <i class="fa fa-check-circle text-success"></i>
+                                    <i class="fa fa-ellipsis-v ms-2"></i>
+                                </span>
+                                <br />
+                                <span style="padding-left: 48px; font-size: small"><b>Due </b></span><span
+                                    style="font-size: small">Sep 18 2024 at 11:59pm | 100 pts</span>
+                            </li>
+                            <li class="list-group-item">
+                                <span style="padding-left: 48px"> <b>Final</b></span><br />
+                                <i class="fa fa-ellipsis-v"></i><i style="padding-right: 15px"
+                                    class="fa fa-ellipsis-v"></i><i style="color: green; padding-right: 5px"
+                                    class="fa-regular fa-pen-to-square"></i>
+                                <span style="padding-bottom: 0px; font-size: small">Week 1 - SETUP - Week starting on
+                                    Monday September 5th
+                                    (9/5/2022) Module |</span>
+                                <span class="float-end">
+                                    <i class="fa fa-check-circle text-success"></i>
+                                    <i class="fa fa-ellipsis-v ms-2"></i>
+                                </span>
+                                <br />
+                                <span style="padding-left: 48px; font-size: small"><b>Due </b></span><span
+                                    style="font-size: small">Sep 18 2024 at 11:59pm | 100 pts</span>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li style="padding: 1rem 0rem 0rem" class="list-group-item">
+                        <div>
+                            <i class="fa fa-ellipsis-v"></i><i class="fa fa-ellipsis-v"></i>
+                            <i style="padding-left: 5px; padding-right: 3px" class="fa-solid fa-caret-down"></i>
+                            PROJECTS
+                            <span class="float-end">
+                                <span class="badge rounded-pill"
+                                    style="color: black; border: solid 1px; border-color: gray">30% of Total</span>
+                                <i class="fa fa-plus ms-2" style="color: gray"></i>
+                                <i class="fa fa-ellipsis-v ms-2" style="color: gray"></i>
+                            </span>
+                        </div>
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <span style="padding-left: 48px"> <b>Project </b></span><br />
+                                <i class="fa fa-ellipsis-v"></i><i style="padding-right: 15px"
+                                    class="fa fa-ellipsis-v"></i><i style="color: green; padding-right: 5px"
+                                    class="fa-regular fa-pen-to-square"></i>
+                                <span style="padding-bottom: 0px; font-size: small">Week 0 - SETUP - Week starting on
+                                    Monday September 5th
+                                    (9/5/2022) Module |</span>
+                                <span class="float-end">
+                                    <i class="fa fa-check-circle text-success"></i>
+                                    <i class="fa fa-ellipsis-v ms-2"></i>
+                                </span>
+                                <br />
+                                <span style="padding-left: 48px; font-size: small"><b>Due </b></span><span
+                                    style="font-size: small">Sep 18 2024 at 11:59pm | 100 pts</span>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+</body>
+
+</html>
