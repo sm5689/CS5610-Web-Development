@@ -3,6 +3,7 @@
     <link rel="stylesheet" href="../../../Kanbas/styles.css" />
     <link rel="stylesheet" href="../../Courses/Navigation/index.css" />
     <link rel="stylesheet" href="../../Navigation/index.css" />
+    <link rel="stylesheet" href="../Modules/index.css">
     <!-- <link rel="stylesheet" href="index.css" /> -->
     <link rel="stylesheet" href="../../../libs/bootstrap/bootstrap.min.css" />
     <link
@@ -28,7 +29,7 @@
         <ul class="wd-kanbas-navigation">
           <!-- Copy Kanbas Navigation Here -->
           <li class="N-logo"><a href="http://northeastern.edu">N</a></li>
-          <li class="wd-active">
+          <li >
             <a href="/Kanbas/Account/Navigation/index.html"
               ><i class="fa-solid fa-circle-user"></i> Account</a
             >
@@ -38,7 +39,7 @@
               ><i class="fa fa-tachometer"></i> Dashboard</a
             >
           </li>
-          <li>
+          <li class="wd-active">
             <a href="/Kanbas/Courses/Home/screen.html"
               ><i class="fa-solid fa-book"></i> Courses</a
             >
@@ -78,11 +79,11 @@
             <ol class="breadcrumb">
               <li
                 style="padding-top: 20px"
-                class="breadcrumb-item active"
+                class="breadcrumb-item active flex-fill"
                 aria-current="page"
               >
                 <i
-                  style="padding-right: 20px; color: red; font-size: large"
+                  style="padding-left: 30px; padding-right: 20px; color: red; font-size: large"
                   class="fa-solid fa-bars"
                 ></i>
                 <span style="color: red; font-size: large; padding-right: 2px"
@@ -90,6 +91,8 @@
                 >
                 <i style="font-size: small" class="fa-solid fa-angle-right"></i>
                 <span style="font-size: large">Assignments</span>
+                <span style="text-align: right; float: inline-end;"><button style="background-color: lightgray; color: black; border-color: gray;" type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-glasses"></i> Student View</button></span>
+
               </li>
             </ol>
           </nav>
@@ -99,18 +102,16 @@
         <div class="flex-fill wd-flex-row-container">
           <div>
             <ul class="wd-navigation">
-              <li>
+              <li >
                 <a href="/Kanbas/Courses/Home/screen.html"> Home</a>
               </li>
-              <li class="wd-active"><a href="#"> Modules</a></li>
-              <li><a href="#"> Piazza</a></li>
+              <li ><a href="#"> Modules</a></li>
+              <li><a href="https://piazza.com/class/lqlwl9wn2q969r"> Piazza</a></li>
               <li>
                 <a href="#"> Zoom Meetings</a>
               </li>
-              <li>
-                <a href="/Kanbas/Courses/Assignments/screen.html">
-                  Assignments</a
-                >
+              <li class="wd-active">
+                <a href="/Kanbas/Courses/Assignments/screen.html"> Assignments</a>
               </li>
               <li>
                 <a href="#"> Quizzes</a>
@@ -121,22 +122,22 @@
                 <a href="#"> Panopto Video</a>
               </li>
               <li>
-                <a href="#"> Discussions</a>
+                <a href="#"> Discussions <i style="color: gray;" class="fa-regular fa-eye-slash"></i></a>
               </li>
               <li>
-                <a href="#"> Announcements</a>
+                <a href="#"> Announcements <i style="color: gray;" class="fa-regular fa-eye-slash"></i></a>
               </li>
-              <li><a href="#"> Pages</a></li>
-              <li><a href="#"> Files</a></li>
-              <li><a href="#"> Rubrics</a></li>
+              <li><a href="#"> Pages <i style="color: gray;" class="fa-regular fa-eye-slash"></i></a></li>
+              <li><a href="#"> Files <i style="color: gray;" class="fa-regular fa-eye-slash"></i></a></li>
+              <li><a href="#"> Rubrics <i style="color: gray;" class="fa-regular fa-eye-slash"></i></a></li>
               <li>
-                <a href="#"> Outcomes</a>
-              </li>
-              <li>
-                <a href="#"> Collaborations</a>
+                <a href="#"> Outcomes <i style="color: gray;" class="fa-regular fa-eye-slash"></i></a>
               </li>
               <li>
-                <a href="#"> Syllabus</a>
+                <a href="#"> Collaborations <i style="color: gray;" class="fa-regular fa-eye-slash"></i></a>
+              </li>
+              <li>
+                <a href="#"> Syllabus <i style="color: gray;" class="fa-regular fa-eye-slash"></i></a>
               </li>
               <li>
                 <a href="/Kanbas/Courses/Settings/Course Details/index.html">
@@ -179,13 +180,14 @@
                 </button>
                 <div class="dropdown" style="float: right">
                   <button
+                    style="background-color: lightgray; color: lightgray;"
                     class="btn btn-secondary dropdown-toggle"
                     type="button"
                     id="dropdownMenuButton1"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                    <i class="fa fa-ellipsis-v ms-2"></i>
+                    <i style="color: black;" class="fa fa-ellipsis-v ms-2"></i>
                   </button>
                   <ul
                     class="dropdown-menu"
@@ -227,7 +229,7 @@
                   </div>
                   <ul style="width: 100%" class="list-group">
                     <li class="list-group-item">
-                      <span style="padding-left: 48px"> <b>A1 SETUP </b></span
+                      <span style="padding-left: 48px"> <b><a style="text-decoration: none; color: black;" href="Edit/screen.html">A1 SETUP </a></b></span
                       ><br />
                       <i class="fa fa-ellipsis-v"></i
                       ><i
@@ -254,7 +256,7 @@
                       >
                     </li>
                     <li class="list-group-item">
-                      <span style="padding-left: 48px"> <b>A2 HTML </b></span
+                      <span style="padding-left: 48px"> <b><a style="text-decoration: none; color: black;" href="Edit/screen.html">A2 HTML </a></b></span
                       ><br />
                       <i class="fa fa-ellipsis-v"></i
                       ><i
@@ -281,7 +283,7 @@
                       >
                     </li>
                     <li class="list-group-item">
-                      <span style="padding-left: 48px"> <b>A3 CSS </b></span
+                      <span style="padding-left: 48px"> <b><a style="text-decoration: none; color: black;" href="Edit/screen.html">A3 CSS </a></b></span
                       ><br />
                       <i class="fa fa-ellipsis-v"></i
                       ><i
@@ -309,7 +311,7 @@
                     </li>
                     <li class="list-group-item">
                       <span style="padding-left: 48px">
-                        <b>A4 BOOTSTRAP </b></span
+                        <b><a style="text-decoration: none; color: black;" href="Edit/screen.html">A4 BOOTSTRAP </a></b></span
                       ><br />
                       <i class="fa fa-ellipsis-v"></i
                       ><i
@@ -337,7 +339,7 @@
                     </li>
                     <li class="list-group-item">
                       <span style="padding-left: 48px">
-                        <b>A5 JAVASCRIPT </b></span
+                        <b><a style="text-decoration: none; color: black;" href="Edit/screen.html">A5 JAVASCRIPT </a> </b></span
                       ><br />
                       <i class="fa fa-ellipsis-v"></i
                       ><i
@@ -368,7 +370,7 @@
                             </span> -->
                     </li>
                     <li class="list-group-item">
-                      <span style="padding-left: 48px"> <b>A6 REACT </b></span
+                      <span style="padding-left: 48px"> <b><a style="text-decoration: none; color: black;" href="Edit/screen.html">A6 REACT </a> </b></span
                       ><br />
                       <i class="fa fa-ellipsis-v"></i
                       ><i
@@ -429,7 +431,7 @@
                         class="fa fa-ellipsis-v"
                       ></i
                       ><i
-                        style="color: green; padding-right: 5px"
+                        style="color: green; padding-right: 10px"
                         class="fa-regular fa-pen-to-square"
                       ></i>
                       <span style="padding-bottom: 0px; font-size: small"
@@ -563,7 +565,7 @@
                   </ul>
                 </li>
 
-                <li style="margin-bottom: 20px; margin-top: 20px; padding-left: 0%; padding-right: 0%; padding-bottom: 0%; background-color: lightgray;" class="list-group-item">
+                <li style="padding-left: 0%; padding-right: 0%; padding-bottom: 0%; background-color: lightgray;" class="list-group-item">
                   <div>
                     <i class="fa fa-ellipsis-v"></i
                     ><i class="fa fa-ellipsis-v"></i>
@@ -586,36 +588,9 @@
                       <i class="fa fa-ellipsis-v ms-2" style="color: gray"></i>
                     </span>
                   </div>
-                  <ul style="margin-bottom: 20px; padding-bottom: 0%; padding-left: 0%; padding-right: 0%; width: 100%" class=" list-group">
-                    <li class="list-group-item">
-                      <span style="padding-left: 48px"> <b>Midterm </b></span
-                      ><br />
-                      <i class="fa fa-ellipsis-v"></i
-                      ><i
-                        style="padding-right: 15px"
-                        class="fa fa-ellipsis-v"
-                      ></i
-                      ><i
-                        style="color: green; padding-right: 5px"
-                        class="fa-regular fa-pen-to-square"
-                      ></i>
-                      <span style="padding-bottom: 0px; font-size: small"
-                        >Week 0 - SETUP - Week starting on Monday September 5th
-                        (9/5/2022) Module |</span
-                      >
-                      <span class="float-end">
-                        <i class="fa fa-check-circle text-success"></i>
-                        <i class="fa fa-ellipsis-v ms-2"></i>
-                      </span>
-                      <br />
-                      <span style="padding-left: 48px; font-size: small"
-                        ><b>Due </b></span
-                      ><span style="font-size: small"
-                        >Sep 18 2024 at 11:59pm | 100 pts</span
-                      >
-                    </li>
-                    <li class="list-group-item">
-                      <span style="padding-left: 48px"> <b>Final</b></span
+                  <ul style="width: 100%; padding-left: 0%; padding-right:0% ; padding-bottom: 0%;" class="list-group ">
+                    <li style="padding-left: 0%; padding-right: 0%; padding-bottom: 0%;" class="list-group-item">
+                      <span style="padding-left: 48px"> <b>Final </b></span
                       ><br />
                       <i class="fa fa-ellipsis-v"></i
                       ><i

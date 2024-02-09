@@ -24,7 +24,7 @@
 .wd-modules > li > ul > li {
   padding: 5px;
   border-top: 1px solid gray !important;
-  border-left: 2px solid green;
+  border-left: 5px solid green;
 }
 
 .wd-modules > li {
