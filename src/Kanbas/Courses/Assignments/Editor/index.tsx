@@ -14,7 +14,7 @@ function AssignmentEditor() {
         navigate(`/Kanbas/Courses/${courseId}/Assignments`);
     };
     return (
-        <div style={{ width: "1275px" }} className="flex-fill p-2 m-2">
+        <div style={{ width: "99%" }} className="flex-fill p-2 m-2">
             <div className="wd-flex-row-container p-2">
                 <div className="flex-fill" style={{ textAlign: 'right' }}>
                     <button style={{ color: 'green', border: 'none', backgroundColor: 'transparent' }} type="button" className="btn custom-btn-outline me-2">

@@ -13,14 +13,18 @@ function KanbasNavigation() {
     { label: "Studio",  icon: <FaDisplay className="fs-2" /> },
     { label: "Commons",  icon: <FaCreativeCommonsSa className="fs-2" /> },
     { label: "Help",  icon: <FaQuestion className="fs-2" /> },
-    
+
   ];
   const { pathname } = useLocation();
   return (
     <ul className="wd-kanbas-navigation">
-      {links.map((link, index) => (
+       <li>
+       <Link to={`/Kanbas/`}><img width="95%" height="6.5%" src="/images/logo.png" /></Link></li>
+       {links.map((link, index) => (
         <li key={index} className={pathname.includes(link.label) ? "wd-active" : ""}>
-          <Link to={`/Kanbas/${link.label}`}> {link.icon} {link.label} </Link>
+          <Link to={`/Kanbas/${link.label}`} style={{ color: (!pathname.includes(link.label) && link.label === "Account") ? "white" : "" }}>
+            {link.icon} {link.label}
+          </Link>
         </li>
       ))}
     </ul>

@@ -2,7 +2,8 @@ import KanbasNavigation from "./Navigation";
 import { Routes, Route, Navigate } from "react-router-dom";
 import Dashboard from "./Dashboard";
 import Courses from "./Courses";
-import './index.css';
+import '../Kanbas/index.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 function Kanbas() {
     return (
       <div className="d-flex">
@@ -17,6 +18,7 @@ function Kanbas() {
           <Route path="Courses/:courseId/*" element={<Courses />} />
         </Routes>
         </div>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </div>
   );}
   export default Kanbas;

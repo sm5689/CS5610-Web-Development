@@ -39,7 +39,7 @@ function ModuleList() {
             </div>
             <hr />
             {/* <!-- Add buttons here --> */}
-            <ul style={{width: "1025px"}} className="list-group wd-modules">
+            <ul style={{width: "99%"}} className="list-group wd-modules">
                 {modulesList.map((module) => (
                     <li
                         className="list-group-item"

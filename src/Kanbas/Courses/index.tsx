@@ -45,11 +45,13 @@ function Courses() {
       </div>
 
       <div className="wd-flex-row-container">
+        <div className="d-none d-md-block">
         <CourseNavigation />
+        </div>
         <div className="flex-fill">
           {/* add position-fixed in the below div classname, also add this paddingTop: "30px" in the syle below*/}
           <div
-            className="overflow-y-scroll bottom-0 end-0"
+            className=" bottom-0 end-0"
             style={{ left: "320px", top: "50px" }} >
             <Routes>
               <Route path="/" element={<Navigate to="Home" />} />
