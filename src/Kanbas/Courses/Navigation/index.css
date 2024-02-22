@@ -1,0 +1,214 @@
+.wd-kanbas-navigation {
+    background-color: black;
+    list-style: none;
+    padding: 0%;
+    margin: 0%;
+    width: 80px;
+    
+}
+
+.wd-kanbas-navigation li {
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 0.8em;
+    text-align: center; 
+}
+
+.wd-kanbas-navigation a {
+    color: white;
+    text-decoration: none;
+}
+
+.wd-kanbas-navigation li.wd-active {
+    background-color: white;
+}
+
+.wd-kanbas-navigation li.wd-active a {
+    color: red;
+}
+
+.wd-kanbas-navigation a i {
+    color: red;
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+
+.wd-kanbas-navigation a i.fa-circle-user {
+    color: gray;
+    
+}
+
+.wd-kanbas-navigation li.N-logo a {
+    font-size: 30px;
+    padding-bottom: 0%;
+    color: red;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+  }
+  body * {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .wd-flex-row-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .wd-flex-grow-1 {
+    flex-grow: 1;
+  }
+
+  .wd-width-85px {
+    width: 85px;
+  }
+
+  .wd-bg-color-black{
+    background-color: #212529;
+  }
+
+  .wd-div-fill-space{
+    height: 100%;
+    width: 100%;
+    flex-grow: 1;
+  }
+
+  .wd-flex-row-Body {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .wd-navigation {
+    background-color: white;
+    list-style: none;
+    padding: 0px;
+    width: 125px;
+    margin: 0px;
+    margin-left: 20px;
+  }
+  .wd-navigation li {
+    padding-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .wd-navigation li.wd-active {
+    border-left: 2px solid black;
+  }
+  .wd-navigation li.wd-active a {
+    color: black;
+  }
+  .wd-navigation a {
+    color: red;
+    text-decoration: none;
+  }
+  
+  .wd-modules,
+.wd-modules * {
+  border-radius: 0%;
+  border: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.wd-modules {
+  margin: 5px;
+}
+
+.wd-modules > li {
+  background-color: lightgray;
+  border: 1px solid gray !important;
+  border-left: none !important;
+}
+
+.wd-modules > li > div {
+  padding: 6px;
+  border-left: 1px solid gray !important;
+}
+
+.wd-modules > li > ul > li {
+  padding: 5px;
+  border-top: 1px solid gray !important;
+  border-left: 2px solid green;
+}
+
+.wd-modules > li {
+  margin-bottom: 20px;
+}
+
+.wd-modules,
+.wd-modules * {
+  border-radius: 0%;
+  border: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.wd-modules {
+  margin: 5px;
+}
+
+.wd-modules > li {
+  background-color: lightgray;
+  border: 1px solid gray !important;
+  border-left: none !important;
+}
+
+.wd-modules > li > div {
+  padding: 6px;
+  border-left: 1px solid gray !important;
+}
+
+.wd-modules > li > ul > li {
+  padding: 5px;
+  border-top: 1px solid gray !important;
+  border-left: 2px solid green;
+}
+
+.wd-modules > li {
+  margin-bottom: 20px;
+}
+
+.wd-collapsed-nav{
+  margin-top: 10px;
+}
+.wd-collapsed-nav li {
+  list-style-type:none;
+  padding: 2px;    margin-top: 5px; margin-bottom: 15px;
+  font-size: 0.8em;  text-align: left;
+}
+
+.wd-collapsed-nav li.wd-active a {
+  list-style-type:none;
+  color: darkred;
+}
+.wd-collapsed-nav a {
+  margin-bottom: 15px;
+  font-size: 1.2em;
+  color: red;
+  text-decoration: none;
+}
+.wd-collapsed-nav a i {
+  color: red;
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+.wd-collapsed-nav li.wd-active a i {
+  color: darkred;
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.wd-collapsed-nav a i.wd-hidden{
+  float: inherit;
+  font-size: 1.1em;
+  color: grey;
+  margin-bottom: 5px;
+}
