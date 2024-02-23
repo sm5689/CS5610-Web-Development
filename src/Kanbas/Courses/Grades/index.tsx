@@ -9,7 +9,7 @@ function Grades() {
   const as = assignments.filter((assignment) => assignment.course === courseId);
   const es = enrollments.filter((enrollment) => enrollment.course === courseId);
 
-  const editableAssignments = ["A101", "A104", "A201", "A206", "A302", "A304", "A306", "A401", "A403", "A502", "A506", "A505", "A601", "A603", "A606"];
+  const editableAssignments = ["A101", "A104", "A201", "A206", "A302", "A304", "A306", "A401", "A403", "A502", "A506", "A505", "A601", "A603", "A606", "A701", "A706", "A802", "A805"];
 
   return (
     <div className="flex-fill">

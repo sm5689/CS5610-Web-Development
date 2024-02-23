@@ -18,7 +18,7 @@ function CourseNavigation() {
     return null; // Return null if no icon should be displayed
   };
   return (
-    <ul className="wd-navigation" style={{paddingTop: "10px"}}>
+    <ul className="wd-navigation" style={{paddingTop: "10px", paddingRight:"30px"}}>
       {links.map((link, index) => (
         <li key={index} className={pathname.includes(link) ? "wd-active" : ""}>
           <Link to={link}>{link} {getIcon(link)}</Link>
