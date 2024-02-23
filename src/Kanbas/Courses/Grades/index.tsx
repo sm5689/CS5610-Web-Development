@@ -9,7 +9,6 @@ function Grades() {
   const as = assignments.filter((assignment) => assignment.course === courseId);
   const es = enrollments.filter((enrollment) => enrollment.course === courseId);
 
-  // List of assignment IDs that should have an input field
   const editableAssignments = ["A101", "A104", "A201", "A206", "A302", "A304", "A306", "A401", "A403", "A502", "A506", "A505", "A601", "A603", "A606"];
 
   return (
@@ -112,7 +111,6 @@ function Grades() {
       </div>
     </div>
       {/* ... other UI components ... */}
-      <h1>Grades</h1>
       <div className="table-responsive">
         <table className="table table-striped table-bordered" style={{borderColor: "gray"}}>
           <thead>
@@ -140,7 +138,7 @@ function Grades() {
                     return (
                       <td style={{textAlign:"center"}} key={assignment._id}>
                         {editableAssignments.includes(assignment._id) ? (
-                          <input style={{textAlign:"center"}}
+                          <input style={{textAlign:"center", width:"60px"}}
                           type="number"
                           className="form-control"
                           defaultValue={grade?.grade || ""}
