@@ -1,12 +1,16 @@
-import { FaCaretDown, FaChevronDown, FaFileExport, FaFileImport, FaFilter, FaKeyboard, FaRegKeyboard } from "react-icons/fa";
+import { FaCaretDown, FaChevronDown, FaFileExport, FaFileImport, FaFilter, FaRegKeyboard} from "react-icons/fa";
 import { assignments, enrollments, grades, users } from "../../Database";
 import { useParams } from "react-router-dom";
+import React from "react";
 import { FaGear } from "react-icons/fa6";
 
 function Grades() {
   const { courseId } = useParams();
   const as = assignments.filter((assignment) => assignment.course === courseId);
   const es = enrollments.filter((enrollment) => enrollment.course === courseId);
+
+  // List of assignment IDs that should have an input field
+  const editableAssignments = ["A101", "A104", "A201", "A206", "A302", "A304", "A306", "A401", "A403", "A502", "A506", "A505", "A601", "A603", "A606"];
 
   return (
     <div className="flex-fill">
@@ -107,34 +111,47 @@ function Grades() {
         </div>
       </div>
     </div>
-      <div className="table-responsive flex-fill">
-        <table className="table table-striped">
-          <thead style={{border: "solid"}}>
-            <th style={{border: "solid"}}>Student Name</th>
-            {as.map((assignment) => (
-              <th key={assignment._id} style={{border: "solid"}}>
-                {assignment.title}
-              </th>
-            ))}
+      {/* ... other UI components ... */}
+      <h1>Grades</h1>
+      <div className="table-responsive">
+        <table className="table table-striped table-bordered" style={{borderColor: "gray"}}>
+          <thead>
+            <tr>
+              <th>Student Name</th>
+              {as.map((assignment) => (
+                <th key={assignment._id}>
+                  {assignment.title} Out of 100
+                </th>
+              ))}
+            </tr>
           </thead>
-          <tbody style={{border: "solid"}}>
+          <tbody>
             {es.map((enrollment) => {
               const user = users.find((u) => u._id === enrollment.user);
               return (
-                <tr key={enrollment._id} style={{border: "solid"}}>
-                   <td style={{border: "solid"}}>
-                     <span style={{color: "red"}}>{user?.firstName} {user?.lastName}</span>
-                   </td>
-                   {as.map((assignment) => {
-                     const grade = grades.find(
-                       (g) => g.student === enrollment.user && g.assignment === assignment._id
-                     );
-                     return (
-                       <td key={assignment._id} style={{border: "solid"}}>
-                         {grade?.grade || ""}
-                       </td>
-                     );
-                   })}
+                <tr key={enrollment._id}>
+                  <td>
+                    {user?.firstName} {user?.lastName}
+                  </td>
+                  {as.map((assignment) => {
+                    const grade = grades.find(
+                      (g) => g.student === enrollment.user && g.assignment === assignment._id
+                    );
+                    return (
+                      <td key={assignment._id}>
+                        {editableAssignments.includes(assignment._id) ? (
+                          <input
+                            type="text"
+                            className="form-control"
+                            defaultValue={grade?.grade || ""}
+                            // Add onChange handler as needed
+                          />
+                        ) : (
+                          grade?.grade || ""
+                        )}
+                      </td>
+                    );
+                  })}
                 </tr>
               );
             })}

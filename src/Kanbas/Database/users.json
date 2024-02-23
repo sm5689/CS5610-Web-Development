@@ -88,5 +88,15 @@
     "email": "legolas@mirkwood.com",
     "dob": "2879-07-15",
     "role": "FACULTY"
+  },
+  {
+    "_id": "130",
+    "username": "son_goku",
+    "password": "gohan123",
+    "firstName": "Son",
+    "lastName": "Goku",
+    "email": "songoku@dragonball.com",
+    "dob": "1950-12-22",
+    "role": "FACULTY"
   }
 ]
