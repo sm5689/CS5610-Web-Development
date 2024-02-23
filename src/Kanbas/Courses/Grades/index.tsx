@@ -130,7 +130,7 @@ function Grades() {
               const user = users.find((u) => u._id === enrollment.user);
               return (
                 <tr key={enrollment._id}>
-                  <td>
+                  <td style={{color:"red"}}>
                     {user?.firstName} {user?.lastName}
                   </td>
                   {as.map((assignment) => {
@@ -138,13 +138,14 @@ function Grades() {
                       (g) => g.student === enrollment.user && g.assignment === assignment._id
                     );
                     return (
-                      <td key={assignment._id}>
+                      <td style={{textAlign:"center"}} key={assignment._id}>
                         {editableAssignments.includes(assignment._id) ? (
-                          <input
-                            type="text"
-                            className="form-control"
-                            defaultValue={grade?.grade || ""}
-                            // Add onChange handler as needed
+                          <input style={{textAlign:"center"}}
+                          type="number"
+                          className="form-control"
+                          defaultValue={grade?.grade || ""}
+                          min="0"
+                          max="100"
                           />
                         ) : (
                           grade?.grade || ""
