@@ -19,7 +19,7 @@ function KanbasNavigation() {
   return (
     <ul className="wd-kanbas-navigation">
        <li>
-       <Link to={`/Kanbas/`}><img width="95%" height="6.5%" src="/images/logo.png" /></Link></li>
+       <Link to={`https://www.northeastern.edu`}><img width="95%" height="6.5%" src="/images/logo.png" /></Link></li>
        {links.map((link, index) => (
         <li key={index} className={pathname.includes(link.label) ? "wd-active" : ""}>
           <Link to={`/Kanbas/${link.label}`} style={{ color: (!pathname.includes(link.label) && link.label === "Account") ? "white" : "" }}>
