@@ -13,25 +13,25 @@ import ParentStateComponent from "./ParentStateComponent";
 import ReduxExamples from "./ReduxExamples";
 
 const Assignment4 = () => {
-    function sayHello() {
-        alert("Hello");
-      }
-    
-  return(
+  function sayHello() {
+    alert("Hello");
+  }
+
+  return (
     <>
       <h1>Assignment 4</h1>
-      <ReduxExamples/>
-      <ClickEvent/>
-      <PassingDataOnEvent/>
-      <PassingFunctions theFunction = {sayHello}/>
-      <EventObject/>
-      <Counter/>
-      <BooleanStateVariables/>
-      <StringStateVariables/>
-      <DateStateVariable/>
-      <ObjectStateVariable/>
-      <ArrayStateVariable/>
-      <ParentStateComponent/>
+      <ReduxExamples />
+      <ClickEvent />
+      <PassingDataOnEvent />
+      <PassingFunctions theFunction={sayHello} />
+      <EventObject />
+      <Counter />
+      <BooleanStateVariables />
+      <StringStateVariables />
+      <DateStateVariable />
+      <ObjectStateVariable />
+      <ArrayStateVariable />
+      <ParentStateComponent />
     </>
   );
 };
