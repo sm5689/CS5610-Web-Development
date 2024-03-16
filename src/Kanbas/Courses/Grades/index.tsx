@@ -1,13 +1,13 @@
 import { FaCaretDown, FaChevronDown, FaFileExport, FaFileImport, FaFilter, FaRegKeyboard } from "react-icons/fa";
-import { assignments, enrollments, grades, users } from "../../Database";
+import db from "../../Database";
 import { useParams } from "react-router-dom";
 import React from "react";
 import { FaGear } from "react-icons/fa6";
 
 function Grades() {
   const { courseId } = useParams();
-  const as = assignments.filter((assignment) => assignment.course === courseId);
-  const es = enrollments.filter((enrollment) => enrollment.course === courseId);
+  const as = db.assignments.filter((assignment) => assignment.course === courseId);
+  const es = db.enrollments.filter((enrollment) => enrollment.course === courseId);
 
   const editableAssignments = ["A101", "A104", "A201", "A206", "A302", "A304", "A306", "A401", "A403", "A502", "A506", "A505", "A601", "A603", "A606", "A701", "A706", "A802", "A805"];
 
@@ -125,14 +125,14 @@ function Grades() {
           </thead>
           <tbody>
             {es.map((enrollment) => {
-              const user = users.find((u) => u._id === enrollment.user);
+              const user = db.users.find((u) => u._id === enrollment.user);
               return (
                 <tr key={enrollment._id}>
                   <td style={{ color: "red" }}>
                     {user?.firstName} {user?.lastName}
                   </td>
                   {as.map((assignment) => {
-                    const grade = grades.find(
+                    const grade = db.grades.find(
                       (g) => g.student === enrollment.user && g.assignment === assignment._id
                     );
                     return (

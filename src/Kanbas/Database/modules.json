@@ -136,7 +136,7 @@
       ]
     }, 
     {
-      "_id": "M101",
+      "_id": "M103",
       "name": "Week 0 - INTRO",
       "description": "Basic principles of rocket propulsion and rocket engines.",
       "course": "RS102",
@@ -222,7 +222,7 @@
       ]
     },
     {
-      "_id": "M102",
+      "_id": "M104",
       "name": "Week 1 - HTML",
       "description": "Understanding rocket fuel, combustion processes, and efficiency.",
       "course": "RS102",
@@ -272,7 +272,7 @@
       ]
     },
     {
-      "_id": "M101",
+      "_id": "M105",
       "name": "Week 0 - INTRO",
       "description": "Basic principles of rocket propulsion and rocket engines.",
       "course": "RS103",
@@ -358,7 +358,7 @@
       ]
     },
     {
-      "_id": "M102",
+      "_id": "M106",
       "name": "Week 1 - HTML",
       "description": "Understanding rocket fuel, combustion processes, and efficiency.",
       "course": "RS103",
@@ -408,7 +408,7 @@
       ]
     },
     {
-      "_id": "M101",
+      "_id": "M107",
       "name": "Week 0 - INTRO",
       "description": "Basic principles of rocket propulsion and rocket engines.",
       "course": "RS104",
@@ -494,7 +494,7 @@
       ]
     },
     {
-      "_id": "M102",
+      "_id": "M108",
       "name": "Week 1 - HTML",
       "description": "Understanding rocket fuel, combustion processes, and efficiency.",
       "course": "RS104",
@@ -544,7 +544,7 @@
       ]
     },
     {
-      "_id": "M101",
+      "_id": "M109",
       "name": "Week 0 - INTRO",
       "description": "Basic principles of rocket propulsion and rocket engines.",
       "course": "RS105",
@@ -630,7 +630,7 @@
       ]
     },
     {
-      "_id": "M102",
+      "_id": "M110",
       "name": "Week 1 - HTML",
       "description": "Understanding rocket fuel, combustion processes, and efficiency.",
       "course": "RS105",
@@ -680,7 +680,7 @@
       ]
     },
     {
-      "_id": "M101",
+      "_id": "M111",
       "name": "Week 0 - INTRO",
       "description": "Basic principles of rocket propulsion and rocket engines.",
       "course": "RS106",
@@ -766,7 +766,7 @@
       ]
     },
     {
-      "_id": "M102",
+      "_id": "M112",
       "name": "Week 1 - HTML",
       "description": "Understanding rocket fuel, combustion processes, and efficiency.",
       "course": "RS106",
@@ -816,7 +816,7 @@
       ]
     },
     {
-      "_id": "M101",
+      "_id": "M113",
       "name": "Week 0 - INTRO",
       "description": "Basic principles of rocket propulsion and rocket engines.",
       "course": "RS107",
@@ -902,7 +902,7 @@
       ]
     },
     {
-      "_id": "M102",
+      "_id": "M114",
       "name": "Week 1 - HTML",
       "description": "Understanding rocket fuel, combustion processes, and efficiency.",
       "course": "RS107",
@@ -952,7 +952,7 @@
       ]
     },
     {
-      "_id": "M101",
+      "_id": "M115",
       "name": "Week 0 - INTRO",
       "description": "Basic principles of rocket propulsion and rocket engines.",
       "course": "RS108",
@@ -1038,7 +1038,7 @@
       ]
     },
     {
-      "_id": "M102",
+      "_id": "M116",
       "name": "Week 1 - HTML",
       "description": "Understanding rocket fuel, combustion processes, and efficiency.",
       "course": "RS108",

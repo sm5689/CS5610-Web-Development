@@ -1,14 +1,14 @@
 import React from "react";
 import { useNavigate, useParams, Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
-import db from "../../../Database";
+import db from "../../Database";
 import { FaEllipsisV } from "react-icons/fa";
 import { FaCircleCheck } from "react-icons/fa6";
-import { KanbasState } from "../../../store";
-import { addAssignment, deleteAssignment, updateAssignment, setAssignment } from "../assignmentsReducer";
+import { KanbasState } from "../../store";
+import { addAssignment, deleteAssignment, updateAssignment, setAssignment } from "./assignmentsReducer";
 import { title } from "process";
 
-function AssignmentEditor() {
+function AssignmentAddEditor() {
     const { assignmentId } = useParams();
     // const assignment = db.assignments.find(
     //     (assignment) => assignment._id === assignmentId);
@@ -28,7 +28,6 @@ function AssignmentEditor() {
     //                         : state.assignmentsReducer.assignment;});
 
     const dispatch = useDispatch();
-
     return (
         <div style={{ width: "99%" }} className="flex-fill p-2 m-2">
             <div className="wd-flex-row-container p-2">
@@ -172,7 +171,7 @@ function AssignmentEditor() {
                         className="btn btn-danger float-end">
                         Cancel
                     </Link>
-                    <Link onClick={() => dispatch(updateAssignment(assignment))} to={`/Kanbas/Courses/${courseId}/Assignments`}
+                    <Link onClick={() => dispatch(addAssignment({...assignment, course:courseId}))} to={`/Kanbas/Courses/${courseId}/Assignments`}
                         className="btn btn-success ms-2 float-end">
                         Save
                     </Link>
@@ -210,4 +209,4 @@ function AssignmentEditor() {
         // </div>
     );
 }
-export default AssignmentEditor;
+export default AssignmentAddEditor;
