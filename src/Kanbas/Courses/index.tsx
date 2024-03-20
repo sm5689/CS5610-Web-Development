@@ -10,9 +10,13 @@ import { FaGlasses } from "react-icons/fa";
 import AssignmentEditor from "./Assignments/Editor";
 import Grades from "./Grades";
 import AssignmentAddEditor from "./Assignments/assignmentAddEditor";
+import { KanbasState } from "../store";
+import { useSelector, useDispatch } from "react-redux";
+
 
 function Courses({ courses }: { courses: any[]; }) {
   const { courseId } = useParams();
+  const {assignmentId} = useParams();
   const course = db.courses.find((course) => course._id === courseId);
   const courseNav = ['Home', 'Modules', 'Piazza', 'Assignments', 'Grades', 'Zoom Meetings', 'Quizzes', 'People', 'Panopto Video', 'Discussions', 'Announcements', 'Pages', 'Files', 'Rubrics', 'Outcomes', 'Collaborations', 'Syllabus', 'Settings'];
   const page = window.location.href;
@@ -20,9 +24,13 @@ function Courses({ courses }: { courses: any[]; }) {
   console.log(listurl.length);
   let breadcrumb = listurl[listurl.length - 1];
   const lastSECOND = listurl[listurl.length - 2];
+  const AssignmentList = useSelector((state: KanbasState) =>
+        state.assignmentsReducer.assignments);
+    const assignment = useSelector((state: KanbasState) =>
+        state.assignmentsReducer.assignment);
   if(lastSECOND == "Assignments"){
-    const assignmentName = db.assignments.find((assignment) => assignment._id=== listurl[listurl.length-1]);
-    breadcrumb = lastSECOND + "  >  " + assignmentName?.title;
+    const assignmentName = AssignmentList.find((assignment) => assignment._id=== listurl[listurl.length-1]);
+    breadcrumb = lastSECOND + "  >  " + assignmentName?.title ;
   }
   return (
     <div>

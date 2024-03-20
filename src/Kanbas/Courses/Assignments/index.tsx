@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import "../Modules/index.css"
+
 import {
   FaCaretDown,
   FaCheckCircle,
@@ -154,7 +156,7 @@ function Assignments() {
                     </Link>
                   </b>{" "}
                   <button
-                    className="btn btn-danger float-end"
+                    className="btn-delete float-end"
                     onClick={() => {
                       if (
                         window.confirm("Are you sure to delete this record?")

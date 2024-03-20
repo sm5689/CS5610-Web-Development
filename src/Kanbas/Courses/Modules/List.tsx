@@ -96,43 +96,44 @@ function ModuleList() {
                 </button>
             </div>
             <hr />
-            {/* <!-- Add buttons here --> */}
-            <ul style={{ width: "99%" }} className="list-group wd-modules">
-                <li className="list-group-item">
-
-
-                    <input style={{border: "solid"}}
+            <input className="input-textarea-style" style={{border: "solid"}}
                         value={selectedModule.name}
                         onChange={(e) =>
                             dispatch(setModule({ ...selectedModule, name: e.target.value }))
                         }
                     />
-                    <button style={{ float: "inline-end", border: "solid"}} type="button" className="btn btn-success" onClick={() => dispatch(updateModule(selectedModule))}>Update</button>
+                    <button style={{ float: "inline-end", border: "solid"}} type="button" className="btn-update" onClick={() => dispatch(updateModule(selectedModule))}>Update</button>
 
-                    <button style={{ float: "inline-end", border: "solid" }} type="button" className="btn btn-secondary"
+                    <button style={{ float: "inline-end", border: "solid" }} type="button" className="btn-add"
                         onClick={() => dispatch(addModule({ ...selectedModule, course: courseId }))}>
                         Add
                     </button>
                     <br />
                     <br />
-                    <textarea style={{border: "solid"}}
+                    <textarea className="input-textarea-style" style={{border: "solid"}}
                         value={selectedModule.description}
                         onChange={(e) =>
                             dispatch(setModule({ ...selectedModule, description: e.target.value }))
                         }
                     />
+            {/* <!-- Add buttons here --> */}
+            <ul style={{ width: "99%" }} className="list-group wd-modules">
+                <li className="list-group-item">
+
+
+                    
                 </li>
 
                 {moduleList
                     .filter((module) => module.course === courseId)
                     .map((module, index) => (
                         <li key={index} className="list-group-item" onClick={() => { console.log(module);dispatch(setModule(module)); }}>
-                            <button style={{ float: "inline-end", border: "solid" }} type="button" className="btn btn-success"
+                            <button style={{ border: "solid" }} type="button" className="btn-edit"
                                 onClick={(event) => { dispatch(setModule(module)); }}>
                                 Edit
                             </button>
 
-                            <button style={{ float: "inline-end", border: "solid" }} type="button" className="btn btn-danger" onClick={() => dispatch(deleteModule(module._id))}>Delete</button>
+                            <button style={{  border: "solid" }} type="button" className="btn-delete" onClick={() => dispatch(deleteModule(module._id))}>Delete</button>
 
                             <div>
                                 <FaGripVertical className="me-2" />

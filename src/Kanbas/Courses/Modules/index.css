@@ -110,3 +110,81 @@ body {
     text-decoration: none;
   }
   
+  .bootstrap-btn-danger-override {
+    background-color: #dc3545 !important; /* Bootstrap danger button background color */
+    border-color: #dc3545 !important; /* Bootstrap danger button border color */
+    color: #fff !important; /* Text color */
+    /* Add more properties from Bootstrap's .btn and .btn-danger classes as needed */
+  }
+
+  .btn-edit {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 6px 4px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    
+  }
+
+  .btn-delete {
+    background-color: red;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 6px 4px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    
+  }
+
+  .btn-add {
+    background-color: green;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 6px 4px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    
+  }
+
+  .btn-update {
+    background-color: blue;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 6px 4px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    
+  }
+
+  .input-textarea-style {
+    border: 1px solid #ced4da; /* Bootstrap's default border color */
+    padding: 0.375rem 0.75rem; /* Bootstrap's default padding */
+    border-radius: 0.25rem; /* Bootstrap's default border-radius */
+    font-size: 1rem; /* Standard font-size */
+    line-height: 1.5; /* Default line height */
+    color: #495057; /* Default text color */
+    background-color: #fff; /* White background */
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; /* Smooth transition for focus */
+    width: 50%;
+  }
