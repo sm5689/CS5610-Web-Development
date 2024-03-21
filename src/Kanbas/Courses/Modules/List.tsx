@@ -26,7 +26,7 @@ function ModuleList() {
     const { courseId } = useParams();
     const moduleList = useSelector((state: KanbasState) =>
         state.modulesReducer.modules);
-        console.log(moduleList);
+    console.log(moduleList);
     const selectedModule = useSelector((state: KanbasState) =>
         state.modulesReducer.module);
     const dispatch = useDispatch();
@@ -96,55 +96,60 @@ function ModuleList() {
                 </button>
             </div>
             <hr />
-            <input className="input-textarea-style" style={{border: "solid"}}
-                        value={selectedModule.name}
-                        onChange={(e) =>
-                            dispatch(setModule({ ...selectedModule, name: e.target.value }))
-                        }
-                    />
-                    <button style={{ float: "inline-end", border: "solid"}} type="button" className="btn-update" onClick={() => dispatch(updateModule(selectedModule))}>Update</button>
+            <input className="input-textarea-style" style={{ border: "solid" }}
+                value={selectedModule.name}
+                onChange={(e) =>
+                    dispatch(setModule({ ...selectedModule, name: e.target.value }))
+                }
+            />
+            <button style={{ float: "inline-end", border: "solid" }} type="button" className="btn-update" onClick={() => dispatch(updateModule(selectedModule))}>Update</button>
 
-                    <button style={{ float: "inline-end", border: "solid" }} type="button" className="btn-add"
-                        onClick={() => dispatch(addModule({ ...selectedModule, course: courseId }))}>
-                        Add
-                    </button>
-                    <br />
-                    <br />
-                    <textarea className="input-textarea-style" style={{border: "solid"}}
-                        value={selectedModule.description}
-                        onChange={(e) =>
-                            dispatch(setModule({ ...selectedModule, description: e.target.value }))
-                        }
-                    />
+            <button style={{ float: "inline-end", border: "solid" }} type="button" className="btn-add"
+                onClick={() => dispatch(addModule({ ...selectedModule, course: courseId }))}>
+                Add
+            </button>
+            <br />
+            <br />
+            <textarea className="input-textarea-style" style={{ border: "solid" }}
+                value={selectedModule.description}
+                onChange={(e) =>
+                    dispatch(setModule({ ...selectedModule, description: e.target.value }))
+                }
+            />
             {/* <!-- Add buttons here --> */}
             <ul style={{ width: "99%" }} className="list-group wd-modules">
                 <li className="list-group-item">
 
 
-                    
+
                 </li>
 
                 {moduleList
                     .filter((module) => module.course === courseId)
                     .map((module, index) => (
-                        <li key={index} className="list-group-item" onClick={() => { console.log(module);dispatch(setModule(module)); }}>
-                            <button style={{ border: "solid" }} type="button" className="btn-edit"
-                                onClick={(event) => { dispatch(setModule(module)); }}>
-                                Edit
-                            </button>
-
-                            <button style={{  border: "solid" }} type="button" className="btn-delete" onClick={() => dispatch(deleteModule(module._id))}>Delete</button>
-
+                        <li key={index} className="list-group-item" onClick={() => { console.log(module); dispatch(setModule(module)); }}>
+                            <div style={{ marginRight: "auto", textAlign: "right" }}>
+                            </div>
                             <div>
                                 <FaGripVertical className="me-2" />
                                 <FaCaretRight />
                                 {module.name}
                                 <span className="float-end">
+                                    <button style={{ border: "solid", marginRight: "auto" }} type="button" className="btn-edit"
+                                        onClick={(event) => { dispatch(setModule(module)); }}>
+                                        Edit
+                                    </button>
+
+                                    <button style={{ border: "solid", marginRight: "auto" }} type="button" className="btn-delete" onClick={() => dispatch(deleteModule(module._id))}>Delete</button>
+
                                     <FaCheckCircle className="text-success" />
                                     <FaCaretDown />
                                     <FaPlusCircle className="ms-2" />
                                     <FaEllipsisV className="ms-2" />
+
                                 </span>
+                                <br />
+                                <span style={{marginLeft: "40px"}}> Course Description: {module.description} </span>
                             </div>
                             {selectedModule._id === module._id && (
                                 <ul className="list-group">

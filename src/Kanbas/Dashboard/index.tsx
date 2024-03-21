@@ -40,10 +40,13 @@ function Dashboard({ courses, course, setCourse, addNewCourse,
                                 <div className="card-body">
                                     <Link className="card-title" to={`/Kanbas/Courses/${course._id}/Home`}
                                         style={{ textDecoration: "none", color: "navy", fontWeight: "bold" }}>
-                                        {course.name} <br />
+                                        {course.name}<br />
                                         
                                     </Link>
+                                    
                                     <p className="card-text">{course.name}</p>
+                                    StartDate = {course.startDate} <br />
+                                    EndDate = {course.endDate} <br /><br />
                                     <Link to={`/Kanbas/Courses/${course._id}/Home`} className="btn btn-primary">
                                         Go </Link>
                                         <button style={{float: "inline-end"}} className="btn btn-warning" onClick={(event) => {

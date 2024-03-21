@@ -156,6 +156,7 @@ function Assignments() {
                     </Link>
                   </b>{" "}
                   <button
+                  style={{marginTop: "18px"}}
                     className="btn-delete float-end"
                     onClick={() => {
                       if (
