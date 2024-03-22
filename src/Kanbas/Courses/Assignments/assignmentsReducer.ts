@@ -4,7 +4,7 @@ import db from "../../Database";
 const initialState = {
     assignments: db.assignments,
     
-    assignment: {_id: "", title: "New Assignment 22", subtitle: "New Assignment Description", dueDate: "Sep 18 2024", points: "100" }
+    assignment: {_id: "", title: "New Assignment 22", subtitle: "New Assignment Description", dueDate: "Sep 18 2024", points: "100"}
 };
 
 const assignmentsSlice = createSlice({

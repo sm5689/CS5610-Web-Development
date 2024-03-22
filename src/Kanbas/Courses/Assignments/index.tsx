@@ -190,7 +190,7 @@ function Assignments() {
                     style={{ fontSize: "12px", paddingLeft: "50px" }}
                     className=""
                   >
-                    Due {assignment.dueDate} at 11:59pm | {assignment.points}{" "}
+                    Due {assignment.dueDate} at 11:59pm | Available from {assignment.availableFromDate} until {assignment.availableUntilDate} |  {assignment.points}{" "}
                     pts
                   </p>
                 </li>

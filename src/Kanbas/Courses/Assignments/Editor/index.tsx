@@ -74,7 +74,7 @@ function AssignmentEditor() {
                 <div className="row g-0 text-end" style={{ paddingBottom: '15px' }}>
                     <div className="col-6 col-md-4" style={{ paddingTop: '5px', paddingRight: '15px' }}>Points</div>
                     <div className="col-sm-6 col-md-8 w-50">
-                    <input value={assignment.points} className="form-control" onChange={(e) => dispatch(setAssignment({ ...assignment, points: e.target.value }))} ></input>
+                        <input value={assignment.points} className="form-control" onChange={(e) => dispatch(setAssignment({ ...assignment, points: e.target.value }))} ></input>
                     </div>
                 </div>
 
@@ -142,11 +142,11 @@ function AssignmentEditor() {
                             <div className="wd-flex-row-container" style={{ width: '100%', justifyContent: 'space-around' }}>
                                 <div>
                                     <b>Available from</b><br />
-                                    <input className="form-control" type="date" />
+                                    <input value={assignment.availableFromDate} className="form-control" type="date" onChange={(e) => dispatch(setAssignment({ ...assignment, availableFromDate: e.target.value }))} />
                                 </div>
                                 <div>
                                     <b>Until</b><br />
-                                    <input className="form-control" type="date" />
+                                    <input value={assignment.availableUntilDate} className="form-control" type="date" onChange={(e) => dispatch(setAssignment({ ...assignment, availableUntilDate: e.target.value }))} />
                                 </div>
                             </div>
                         </div>

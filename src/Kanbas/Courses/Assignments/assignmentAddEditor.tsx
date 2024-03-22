@@ -139,13 +139,13 @@ function AssignmentAddEditor() {
                             <input value={assignment.dueDate} className="form-control" type="date" onChange={(e) => dispatch(setAssignment({ ...assignment, dueDate: e.target.value }))} />
                             <br />
                             <div className="wd-flex-row-container" style={{ width: '100%', justifyContent: 'space-around' }}>
-                                <div>
+                            <div>
                                     <b>Available from</b><br />
-                                    <input className="form-control" type="date" />
+                                    <input value={assignment.availableFromDate} className="form-control" type="date" onChange={(e) => dispatch(setAssignment({ ...assignment, availableFromDate: e.target.value }))} />
                                 </div>
                                 <div>
                                     <b>Until</b><br />
-                                    <input className="form-control" type="date" />
+                                    <input value={assignment.availableUntilDate} className="form-control" type="date" onChange={(e) => dispatch(setAssignment({ ...assignment, availableUntilDate: e.target.value }))} />
                                 </div>
                             </div>
                         </div>
